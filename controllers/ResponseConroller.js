@@ -1,4 +1,6 @@
 const User = require("../models/RegisterSchema");
+    require("dotenv").config();
+    const sc = process.env.Secret_key;
     const jwt = require("jsonwebtoken");
     const control = (req,res) =>{
         res.send("Registration is successful");
