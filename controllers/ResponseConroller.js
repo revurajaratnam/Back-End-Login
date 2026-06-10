@@ -50,5 +50,12 @@ const User = require("../models/RegisterSchema");
       })
     }
 
+    const UserFile =(req,res) =>{
+      console.log(req.body);
+     res.json({
+      message:" please Wait we will add ypure file"
+     })
+    }
 
-    module.exports = {control ,loginControl,middleware}
+
+    module.exports = {control ,loginControl,middleware,UserFile}
