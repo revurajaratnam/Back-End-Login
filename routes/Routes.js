@@ -1,4 +1,4 @@
-const {control, loginControl, middleware} = require("../controllers/ResponseConroller");
+const {control, loginControl, middleware ,UserFile} = require("../controllers/ResponseConroller");
 const verifyToken = require("../middleware/authorization");
 
 const router = require("express").Router();
@@ -10,6 +10,7 @@ const router = require("express").Router();
  router.get("/signin",loginControl)
  router.post("/signin",loginControl)
 //  router.get("/dashboard",verifyToken,middleware)
+router.post("/user",UserFile);
 
     
  
