@@ -51,9 +51,10 @@ const User = require("../models/RegisterSchema");
     }
 
     const UserFile =(req,res) =>{
-      console.log(req.body);
+      console.log("hello",req.body);
+      console.log("photo",req.file);
      res.json({
-      message:" please Wait we will add ypure file"
+      message:" please Wait we will add youre file"
      })
     }
 
