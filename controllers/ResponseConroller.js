@@ -19,7 +19,7 @@ const User = require("../models/RegisterSchema");
             console.log(req.headers);
         const exit = await User.findOne({uname});
         if(!exit){
-            return res.send("User Name is not found6")
+            return res.send("User Name is not found")
         }
         const exit1 = await User.findOne({password})
         if(exit1.password !== password){
